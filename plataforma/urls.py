@@ -20,4 +20,5 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('xpto/', admin.site.urls),
+     path('cadas/', admin.site.urls),
 ]
