@@ -21,3 +21,5 @@ class janelas(models.Model):
     contato_gerente = models.CharField(max_length=100)
     contato_regional = models.CharField(max_length=100)
     
+class xmlfile(models.Model):
+    file = models.FileField(upload_to='xml_files/',blank=True,null=True)
