@@ -23,3 +23,21 @@ class janelas(models.Model):
     
 class xmlfile(models.Model):
     file = models.FileField(upload_to='xml_files/',blank=True,null=True)
+
+
+class ocorrencia(models.Model):
+    id = models.AutoField(primary_key=True)
+    id_coleta = models.IntegerField()
+    tipodoc = models.CharField(max_length=10)
+    id_ctenfse = models.IntegerField()
+    coleta_dtemissao = models.DateField()
+    cte_dtemissao = models.DateField()
+    descricao = models.CharField(max_length=255)
+    sequencia = models.IntegerField()
+    dtocorrencia = models.DateTimeField()
+    cnpjcpfcodigo = models.CharField(max_length=14)
+    razaosocial = models.CharField(max_length=255)
+    veiculo = models.CharField(max_length=10)
+    trajeto = models.IntegerField()
+    sequencia_trajeto = models.IntegerField()
+    descricao_trajeto = models.CharField(max_length=255)
