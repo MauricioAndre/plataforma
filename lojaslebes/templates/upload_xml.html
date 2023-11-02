@@ -1,0 +1,8 @@
+<html>
+    <h1>Enviar xml da Nota Fiscal</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="xml_file">
+        <button type="submit">Enviar</button>
+    </form>
+</html>
