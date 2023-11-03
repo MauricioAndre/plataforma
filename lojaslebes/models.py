@@ -20,7 +20,10 @@ class janelas(models.Model):
     cidade = models.CharField(max_length=50)
     contato_gerente = models.CharField(max_length=100)
     contato_regional = models.CharField(max_length=100)
+    nome_loja = models.CharField(max_length=10, null=True, blank=True)
+    nome_regional = models.CharField(max_length=100, null=True, blank=True)
     
+
 class xmlfile(models.Model):
     file = models.FileField(upload_to='xml_files/',blank=True,null=True)
 
